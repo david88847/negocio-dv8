@@ -1,103 +1,569 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Tienda DV8 – Productos Útiles y Económicos</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUXE Store - Productos Premium</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
+    <!-- HEADER / NAVEGACIÓN -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <span class="logo-icon">◆</span>
+                    <span class="logo-text">LUXE<span class="logo-dot">.</span></span>
+                </div>
+                
+                <nav class="nav-menu">
+                    <a href="#inicio" class="nav-link active">Inicio</a>
+                    <a href="#productos" class="nav-link">Productos</a>
+                    <a href="#categorias" class="nav-link">Categorías</a>
+                    <a href="#ofertas" class="nav-link">Ofertas</a>
+                    <a href="#contacto" class="nav-link">Contacto</a>
+                </nav>
 
-  <!-- NAV -->
-  <nav>
-    <div class="logo">DV8</div>
-    <ul>
-      <li><a href="#productos">Productos</a></li>
-      <li><a href="#envios">Envíos</a></li>
-      <li><a href="#nosotros">Quiénes somos</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-    </ul>
-  </nav>
+                <div class="nav-actions">
+                    <button class="icon-btn" aria-label="Buscar">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                    <button class="icon-btn" aria-label="Favoritos">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                        <span class="badge">3</span>
+                    </button>
+                    <button class="icon-btn cart-btn" aria-label="Carrito">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                        <span class="badge">5</span>
+                    </button>
+                    <button class="menu-toggle" aria-label="Menú">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
 
-  <!-- HERO -->
-  <header class="hero">
-    <h1>Tienda DV8</h1>
-    <p>Productos útiles, económicos y con envío rápido en Cataluña</p>
-  </header>
+    <!-- HERO SECTION -->
+    <section class="hero" id="inicio">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-badge">✨ Nueva Colección 2026</span>
+                <h1 class="hero-title">
+                    Descubre el <span class="gradient-text">Estilo</span><br>
+                    que te Define
+                </h1>
+                <p class="hero-description">
+                    Productos premium seleccionados para ti. Calidad excepcional, 
+                    diseño único y envío gratuito en pedidos superiores a 50€.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#productos" class="btn btn-primary">
+                        Explorar Productos
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                    <a href="#ofertas" class="btn btn-secondary">Ver Ofertas</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">10K+</span>
+                        <span class="stat-label">Clientes Felices</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Productos</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">4.9★</span>
+                        <span class="stat-label">Valoración</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- PRODUCTOS -->
-  <section id="productos" class="productos-grid">
+    <!-- CATEGORÍAS -->
+    <section class="categories" id="categorias">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Categorías</span>
+                <h2 class="section-title">Explora por Categoría</h2>
+                <p class="section-subtitle">Encuentra exactamente lo que buscas</p>
+            </div>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">👕</div>
+                    <h3>Ropa</h3>
+                    <p>+200 productos</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">👟</div>
+                    <h3>Calzado</h3>
+                    <p>+150 productos</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">⌚</div>
+                    <h3>Accesorios</h3>
+                    <p>+100 productos</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🎒</div>
+                    <h3>Bolsos</h3>
+                    <p>+80 productos</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">💎</div>
+                    <h3>Joyería</h3>
+                    <p>+60 productos</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🕶️</div>
+                    <h3>Gafas</h3>
+                    <p>+40 productos</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="card">
-      <img src="AURICULARES.jpg" class="producto-img">
-      <h2>Auriculares TWS Bluetooth</h2>
-      <p>Sonido HD · Batería 24h · Compatibles con iPhone y Android</p>
-      <span class="precio">12,99 €</span>
-      <a class="btn" href="https://wa.me/34600000000">Comprar</a>
-    </div>
+    <!-- PRODUCTOS DESTACADOS -->
+    <section class="products" id="productos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Lo más vendido</span>
+                <h2 class="section-title">Productos Destacados</h2>
+                <p class="section-subtitle">Los favoritos de nuestros clientes</p>
+            </div>
 
-    <div class="card">
-      <img src="https://i.imgur.com/8mQmQyH.jpeg" class="producto-img">
-      <h2>Cargador rápido USB‑C (GaN)</h2>
-      <p>Carga ultrarrápida · Universal · Tecnología GaN</p>
-      <span class="precio">14,99 €</span>
-      <a class="btn" href="https://wa.me/34600000000">Comprar</a>
-    </div>
+            <div class="products-filter">
+                <button class="filter-btn active">Todos</button>
+                <button class="filter-btn">Nuevos</button>
+                <button class="filter-btn">Populares</button>
+                <button class="filter-btn">Ofertas</button>
+            </div>
 
-    <div class="card">
-      <img src="https://i.imgur.com/0pYq7rX.jpeg" class="producto-img">
-      <h2>Bombillas LED para coche</h2>
-      <p>Luz potente · Bajo consumo · Fácil instalación</p>
-      <span class="precio">9,99 €</span>
-      <a class="btn" href="https://wa.me/34600000000">Comprar</a>
-    </div>
+            <div class="products-grid">
+                <!-- Producto 1 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500" alt="Zapatillas deportivas">
+                        <span class="product-badge new">NUEVO</span>
+                        <button class="wishlist-btn" aria-label="Añadir a favoritos">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                        <div class="product-actions">
+                            <button class="quick-view">Vista Rápida</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Calzado</span>
+                        <h3 class="product-name">Zapatillas Sport Pro</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(128)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">89,99€</span>
+                            <span class="old-price">119,99€</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="9" cy="21" r="1"></circle>
+                                <circle cx="20" cy="21" r="1"></circle>
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                            </svg>
+                            Añadir al carrito
+                        </button>
+                    </div>
+                </article>
 
-    <div class="card">
-      <img src="https://i.imgur.com/6t7p0fF.jpeg" class="producto-img">
-      <h2>Tiras LED RGB</h2>
-      <p>Decoración · Gaming · Habitaciones · Bares</p>
-      <span class="precio">11,99 €</span>
-      <a class="btn" href="https://wa.me/34600000000">Comprar</a>
-    </div>
+                <!-- Producto 2 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500" alt="Reloj premium">
+                        <span class="product-badge hot">HOT 🔥</span>
+                        <button class="wishlist-btn" aria-label="Añadir a favoritos">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                        <div class="product-actions">
+                            <button class="quick-view">Vista Rápida</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Accesorios</span>
+                        <h3 class="product-name">Reloj Elegance Gold</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(256)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">199,00€</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="9" cy="21" r="1"></circle>
+                                <circle cx="20" cy="21" r="1"></circle>
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                            </svg>
+                            Añadir al carrito
+                        </button>
+                    </div>
+                </article>
 
-    <div class="card">
-      <img src="https://i.imgur.com/7pXJf8O.jpeg" class="producto-img">
-      <h2>Alfombrilla refrigerante mascotas</h2>
-      <p>Perfecta para verano · No tóxica · Fácil de limpiar</p>
-      <span class="precio">15,99 €</span>
-      <a class="btn" href="https://wa.me/34600000000">Comprar</a>
-    </div>
+                <!-- Producto 3 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=500" alt="Gafas de sol">
+                        <span class="product-badge sale">-30%</span>
+                        <button class="wishlist-btn" aria-label="Añadir a favoritos">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                        <div class="product-actions">
+                            <button class="quick-view">Vista Rápida</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Gafas</span>
+                        <h3 class="product-name">Gafas Sun Classic</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(89)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">69,99€</span>
+                            <span class="old-price">99,99€</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="9" cy="21" r="1"></circle>
+                                <circle cx="20" cy="21" r="1"></circle>
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                            </svg>
+                            Añadir al carrito
+                        </button>
+                    </div>
+                </article>
 
-  </section>
+                <!-- Producto 4 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=500" alt="Mochila premium">
+                        <button class="wishlist-btn" aria-label="Añadir a favoritos">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                        <div class="product-actions">
+                            <button class="quick-view">Vista Rápida</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Bolsos</span>
+                        <h3 class="product-name">Mochila Urban Pro</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(312)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">79,99€</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="9" cy="21" r="1"></circle>
+                                <circle cx="20" cy="21" r="1"></circle>
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                            </svg>
+                            Añadir al carrito
+                        </button>
+                    </div>
+                </article>
 
-  <!-- ENVÍOS -->
-  <section id="envios" class="info">
-    <h2>Envíos y devoluciones</h2>
-    <p>Envíos rápidos en Cataluña (24–48h). Pago seguro por WhatsApp o Bizum.</p>
-    <p>Devoluciones aceptadas dentro de 14 días si el producto está en buen estado.</p>
-  </section>
+                <!-- Producto 5 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=500" alt="Zapatillas blancas">
+                        <span class="product-badge new">NUEVO</span>
+                        <button class="wishlist-btn" aria-label="Añadir a favoritos">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                        <div class="product-actions">
+                            <button class="quick-view">Vista Rápida</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Calzado</span>
+                        <h3 class="product-name">Sneakers White Edition</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(445)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">109,99€</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="9" cy="21" r="1"></circle>
+                                <circle cx="20" cy="21" r="1"></circle>
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                            </svg>
+                            Añadir al carrito
+                        </button>
+                    </div>
+                </article>
 
-  <!-- QUIÉNES SOMOS -->
-  <section id="nosotros" class="info">
-    <h2>Quiénes somos</h2>
-    <p>Somos Tienda DV8, un pequeño comercio de Cataluña especializado en productos útiles, económicos y de calidad. Nuestro objetivo es ofrecer artículos prácticos con envío rápido y atención cercana.</p>
-  </section>
+                <!-- Producto 6 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500" alt="Bolso de cuero">
+                        <span class="product-badge sale">-20%</span>
+                        <button class="wishlist-btn" aria-label="Añadir a favoritos">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                        <div class="product-actions">
+                            <button class="quick-view">Vista Rápida</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Bolsos</span>
+                        <h3 class="product-name">Bolso Leather Premium</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(198)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">159,99€</span>
+                            <span class="old-price">199,99€</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="9" cy="21" r="1"></circle>
+                                <circle cx="20" cy="21" r="1"></circle>
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                            </svg>
+                            Añadir al carrito
+                        </button>
+                    </div>
+                </article>
+            </div>
 
-  <!-- CONTACTO -->
-  <section id="contacto" class="info">
-    <h2>Contacto</h2>
-    <p>WhatsApp: <strong>600 000 000</strong></p>
-    <p>Email: <strong>tienda.dv8@gmail.com</strong></p>
-  </section>
+            <div class="products-cta">
+                <a href="#" class="btn btn-outline">Ver todos los productos</a>
+            </div>
+        </div>
+    </section>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2026 Tienda DV8 – Envíos en Cataluña</p>
-  </footer>
+    <!-- BANNER OFERTA ESPECIAL -->
+    <section class="promo-banner" id="ofertas">
+        <div class="container">
+            <div class="promo-content">
+                <span class="promo-tag">⚡ Oferta Limitada</span>
+                <h2 class="promo-title">Hasta 50% de Descuento</h2>
+                <p class="promo-description">
+                    En toda la colección de otoño. Solo por tiempo limitado.
+                </p>
+                <div class="countdown">
+                    <div class="countdown-item">
+                        <span class="countdown-number">02</span>
+                        <span class="countdown-label">Días</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number">14</span>
+                        <span class="countdown-label">Horas</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number">36</span>
+                        <span class="countdown-label">Min</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number">52</span>
+                        <span class="countdown-label">Seg</span>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-primary">Comprar Ahora</a>
+            </div>
+        </div>
+    </section>
 
-</body>
-</html>
+    <!-- CARACTERÍSTICAS -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🚚</div>
+                    <h3>Envío Gratis</h3>
+                    <p>En pedidos superiores a 50€</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Devolución Fácil</h3>
+                    <p>30 días para devolver</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Pago Seguro</h3>
+                    <p>100% protegido</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💬</div>
+                    <h3>Soporte 24/7</h3>
+                    <p>Atención personalizada</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  </footer>
+    <!-- TESTIMONIOS -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Testimonios</span>
+                <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">
+                        "Increíble calidad y servicio. Los productos superaron mis expectativas. ¡Volveré a comprar seguro!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">M</div>
+                        <div class="author-info">
+                            <h4>María García</h4>
+                            <span>Cliente Verificada</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">
+                        "El envío fue rapidísimo y el producto llegó en perfectas condiciones. Muy recomendable."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">J</div>
+                        <div class="author-info">
+                            <h4>Juan Pérez</h4>
+                            <span>Cliente Verificado</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">
+                        "La mejor tienda online en la que he comprado. Precios justos y productos de primera calidad."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">L</div>
+                        <div class="author-info">
+                            <h4>Laura Martínez</h4>
+                            <span>Cliente Verificada</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter" id="contacto">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Suscríbete y obtén un 10% de descuento</h2>
+                <p>Recibe las últimas novedades y ofertas exclusivas</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Tu correo electrónico" required>
+                    <button type="submit" class="btn btn-primary">Suscribirme</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <span class="logo-icon">◆</span>
+                        <span class="logo-text">LUXE<span class="logo-dot">.</span></span>
+                    </div>
+                    <p class="footer-description">
+                        Tu tienda online de confianza para productos premium. 
+                        Calidad, estilo y servicio excepcional.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="YouTube">📺</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Tienda</h4>
+                    <ul>
+                        <li><a href="#">Novedades</a></li>
+                        <li><a href="#">Más Vendidos</a></li>
+                        <li><a href="#">Ofertas</a></li>
+                        <li><a href="#">Colecciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Ayuda</h4>
+                    <ul>
+                        <li><a href="#">Atención al Cliente</a></li>
+                        <li><a href="#">Envíos</a></li>
+                        <li><a href="#">Devoluciones</a></li>
+                        <li><a href="#">Guía de Tallas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <ul class="contact-info">
+                        <li>📍 Calle Principal 123, Madrid</li>
+                        <li>📞 +34 900 123 456</li>
+                        <li>✉️ info@luxestore.com</li>
+                        <li>🕐 Lun-Vie: 9:00 - 20:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 LUXE Store. Todos los derechos reservados.</p>
+                <div class="payment-methods">
+                    <span>💳 Visa</span>
+                    <span>💳 Mastercard</span>
+                    <span>💳 PayPal</span>
+                    <span>💳 Apple Pay</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
