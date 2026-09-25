@@ -1,3 +1,4 @@
+/* GENERAL */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -5,12 +6,44 @@ body {
   color: #333;
 }
 
+/* NAV */
+nav {
+  background: #111;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #00ff88;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #00ff88;
+}
+
 /* HERO */
 .hero {
-  background: linear-gradient(135deg, #222, #444);
+  background: linear-gradient(135deg, #00ff88, #006644);
   color: white;
   text-align: center;
-  padding: 60px 20px;
+  padding: 80px 20px;
 }
 
 /* GRID */
@@ -37,6 +70,12 @@ body {
   transform: translateY(-5px);
 }
 
+.producto-img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
 .precio {
   display: block;
   font-size: 20px;
@@ -47,7 +86,7 @@ body {
 /* BUTTON */
 .btn {
   display: inline-block;
-  background: #28a745;
+  background: #00cc66;
   padding: 12px 20px;
   color: white;
   text-decoration: none;
@@ -56,18 +95,28 @@ body {
 }
 
 .btn:hover {
-  background: #218838;
+  background: #00994d;
+}
+
+/* INFO SECTIONS */
+.info {
+  max-width: 800px;
+  margin: 40px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 /* FOOTER */
 footer {
-  background: #222;
+  background: #111;
   color: white;
   text-align: center;
-  padding: 15px;
+  padding: 20px;
   margin-top: 40px;
 }
-.producto-img {
+
   width: 100%;
   border-radius: 10px;
   margin-bottom: 15px;
